@@ -20,7 +20,7 @@ You'll get an HTTP server listening on the TCP port specified in the PORT enviro
 
 Best practice is to run this behind a proper Web server as a reverse proxy, such as Nginx, so that Node is not facing the public Internet.  This is what Heroku does internally.
 
-If you're not running this on Heroku, Here is a snippet to put in your Nginx config file that will reverse-proxy requests and set the needed header:
+If you're not running this on Heroku, here is a snippet to put in your Nginx config file that will reverse-proxy requests and set the needed header:
 
     location = /ip {
         proxy_pass http://127.0.0.1:3000;
