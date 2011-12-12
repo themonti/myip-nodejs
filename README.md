@@ -1,14 +1,18 @@
 Show my public IP
 =================
 
-This is a small Node.js app that will show the HTTP client's IP, as seen by the Web server.  This also supports being run behind a reverse-proxy, if the X-Forwarded-For or X-Real-IP headers are set.
+This is a small Node.js app that will show the HTTP client's IP, as seen by the Web server.  This also supports being run behind a reverse-proxy, if the X-Forwarded-For or X-Real-IP headers are set.  Can also be run directly on Heroku.
 
 To run:
 
-sudo gem install foreman
-foreman start
+    sudo gem install foreman
+    foreman start
 
 or
 
-PORT=5000 node web.js
+    PORT=5000 node web.js
+
+or
+
+    heroku create --stack cedar
 
